@@ -1,8 +1,14 @@
-import { motion } from "framer-motion";
+import HeroPage from '@/app/(Hero)/HeroPage';
+import backgroundImage from "@/public/image1.png"
+
 export default function Home() {
   return (
-    <div>
-      <button className="btn btn-outline btn-success">Success</button>
+    <div
+      className="relative min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url('/image1.png')` }}
+    >
+      <HeroPage />
+
     </div>
   );
 }
